@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon-96x96.png" type="image/x-icon">
+        <link rel="stylesheet" href="output.css">
         <title>Recipe App</title>
     </head>
-    <body>
 
-    </body>
-</html>
+    <body>
+        <div class="w-full py-3 bg-[#1AA7EC] px-[15%]">
+            <h1
+                class="font-mono  italic text-[3rem] font-bold text-[#FFFFFF]">Recipe
+                App</h1>
+        </div>
+        <a href="index.html"><button id="home-btn"
+                class="text-[#1AA7EC] text-opacity-100 border font-san font-normal border-[#1AA7EC] hover:border-[#45748b] px-10 mt-3 ml-[20%] rounded-[50px] hover:bg-[#1AA7EC] hover:bg-opacity-40 ">Home</button>
+        </a>
+        <div class="text-center mx-auto block mt-4  ">
+            <input
+                class="px-10 py-2 rounded-[20px] border border-x-0 border-t-0 text-[grey] border-b-[#1AA7EC] hover:border-x-[1px] hover:border-t-[1px] hover:border-x-[#1AA7EC] hover:hover:border-t-[#1AA7EC] text-center outline-none "
+                placeholder="RECIPE NAME" type="text" name id="recipe-name">
+        </div>
+        <div class="w-full text-center mx-auto mt-6 outline-none ">
+            <textarea
+                class="w-[400px] h-[200px] outline-none  border border-[#1AA7EC] px-2 text-[grey]"
+                type="text" name
+                id="recipe-description" placeholder="Write Steps To Cook." cols
+                rows="5"></textarea>
+        </div>
+        <div class="text-center mx-auto mt-2 ">
+            <h3 class="text-[grey] text-opacity-80">Ingridients</h3>
+            <div class="text-center mx-auto">
+                <input
+                    class="text-[grey] px-10 py-1 rounded-[20px] border border-x-0 border-t-0 border-b-[#1AA7EC] hover:border-x-[1px] hover:border-t-[1px] hover:border-x-[#1AA7EC] hover:hover:border-t-[#1AA7EC] text-center outline-none "
+                    placeholder="Ingridients Name" type="text" name
+                    id="Ingridients-name">
+                <button id="add-ingridients"
+                    class="ml-10 text-[#1AA7EC] text-opacity-100 border font-san font-normal border-[#1AA7EC] px-10 py-1 mt-4 rounded-[50px] text-[12px] hover:border-[#45748b] hover:bg-opacity-40">Add</button>
+
+            </div>
+            <button id="dlt-btn"
+                class=" bg-[red] mb-4 text-[white] text-opacity-100 border font-san font-normal border-[red] px-10 py-1 mt-6 rounded-[50px] text-[12px] hover:bg-[red] hover:bg-opacity-40 hover:border-[1.5px]">Delete
+                Recipe</button>
+
+        </body>
+
+    </html>
